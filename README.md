@@ -1,2 +1,2 @@
-# police-data-viz
+# police-data
 Police Data Visualizations
