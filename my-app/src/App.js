@@ -1,7 +1,7 @@
 import './App.css';
 import StatusGraph from './components/caseStatus';
-import Body from './components/caseStatus';
-import StatusGraph from './components/caseStatus';
+import BodyCam from './components/caseStatus';
+import NoBodyCam from './components/caseStatus';
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
       <h1>Mapping</h1>
       <StatusGraph />
       <div className="d-flex flex-row">
-
+        <BodyCam /> 
+        <NoBodyCam /> 
       </div>
     </div>
   );
