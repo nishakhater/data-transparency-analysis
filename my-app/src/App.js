@@ -10,6 +10,12 @@ import AnnotModal from './components/popup';
 import React, { useState } from "react";
 import ReadIcon from './assets/readMore.png';
 import LinkIcon from './assets/hyperlink.png';
+import FrameOne from './assets/frames/Frame1.png'
+import FrameTwo from './assets/frames/Frame2.png'; 
+import FrameThree from './assets/frames/Frame3.png'; 
+import FrameFour from './assets/frames/Frame4.png'; 
+import FrameFive from './assets/frames/Frame5.png'
+import FrameSix from './assets/frames/Frame6.png'
 import annotations from './assets/annotations';
 import links from './assets/links';
 
@@ -39,6 +45,10 @@ class App extends React.Component {
 
     return (
       <div>
+        <div>
+          Intro 
+        </div>
+        {/* FRAME 1 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
           <img id={0} src={ReadIcon} alt="read more icon" />
@@ -50,7 +60,10 @@ class App extends React.Component {
               <img id={0} src={LinkIcon} alt="read more icon" />
             </Button> : null
         }
+        <img class="w-100 p-3" src={FrameOne}/>
 
+
+        {/* FRAME 2 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
           <img id={1} src={ReadIcon} alt="read more icon" />
@@ -62,6 +75,68 @@ class App extends React.Component {
               <img id={1} src={LinkIcon} alt="read more icon" />
             </Button> : null
         }
+        <img class="w-100 p-3" src={FrameTwo}/>
+
+
+      {/* FRAME 3 */}
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
+          <img id={2} src={ReadIcon} alt="read more icon" />
+        </Button>
+        {/* //link */}
+        {
+          links[1].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={2} src={LinkIcon} alt="read more icon" />
+            </Button> : null
+        }
+        <img class="w-100 p-3" src={FrameThree}/>
+
+
+      
+        {/* FRAME 4 */}
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
+          <img id={2} src={ReadIcon} alt="read more icon" />
+        </Button>
+        {/* //link */}
+        {
+          links[1].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={2} src={LinkIcon} alt="read more icon" />
+            </Button> : null
+        }
+        <img class="w-100 p-3" src={FrameFour}/>
+
+        {/* FRAME 5 */}
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
+          <img id={2} src={ReadIcon} alt="read more icon" />
+        </Button>
+        {/* //link */}
+        {
+          links[1].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={2} src={LinkIcon} alt="read more icon" />
+            </Button> : null
+        }
+        <img class="w-100 p-3" src={FrameFive}/>
+
+
+        {/* FRAME 6 */}
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
+          <img id={2} src={ReadIcon} alt="read more icon" />
+        </Button>
+        {/* //link */}
+        {
+          links[1].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={2} src={LinkIcon} alt="read more icon" />
+            </Button> : null
+        }
+        <img class="w-100 p-3" src={FrameSix}/>
+
 
 
         <Modal show={this.state.show} dialogClassName="border-0"  onHide={handleClose} >
