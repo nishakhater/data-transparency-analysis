@@ -31,7 +31,7 @@ class App extends React.Component {
     };
   }
   render() {
-    const handleClose = () => this.setState({ show: false });
+    const handleClose = () => this.setState({ show: false, content: "", linkContent: undefined });
     const text = ["hi", "help"]
 
     const handleShow = (item) => this.setState({ show: true, content: annotations[item.target.id] });
