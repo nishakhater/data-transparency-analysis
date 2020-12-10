@@ -3,7 +3,7 @@
 @import "../node_modules/bootstrap/scss/variables"; */
 
 
-@import "../node_modules/bootstrap";
+/* @import "./node_modules/bootstrap"; */
 
 .btn-sm {
   padding: 0.2em 0.6em;

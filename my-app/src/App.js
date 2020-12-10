@@ -16,7 +16,7 @@ import links from './assets/links';
 // import './BootstrapCustom.css';
 
 import {
-  Modal, Button, Row, Dropdown, DropdownButton
+  Modal, Button, Row, Container, Dropdown, DropdownButton
 } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -64,37 +64,38 @@ class App extends React.Component {
         }
 
 
-        <Modal show={this.state.show} onHide={handleClose} >
+        <Modal show={this.state.show} dialogClassName="border-0"  onHide={handleClose} >
 
-          <Modal.Header closeButton />
-          {/* <Modal.Title>Heading Text</Modal.Title> */}
-          {/* </Modal.Header> */}
-
-          <Modal.Body >{this.state.content}</Modal.Body>
-
-          {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>Close</Button>
-        </Modal.Footer> */}
-
+          <Modal.Header className="border-0" closeButton>
+            </Modal.Header>
+          <Modal.Body className='p-0'>
+            <Container className="p-5 h-100 overflow-scroll">
+              <p>
+                {this.state.content}
+              </p>
+            </Container>
+          </Modal.Body>
         </Modal>
         <Modal show={this.state.show} onHide={handleClose} >
           <Modal.Header closeButton />
           <Modal.Body >
-            {
-              this.state.linkContent ?
-                this.state.linkContent.map((item, index) =>
-                  (
-                    <div>
-                      {`${index}. `}
-                      <a href={item.href}>
-                        {item.name}
-                      </a>
-                    </div>
-                  )
-                )
-                : null
-            }
+            <Container>
 
+              {
+                this.state.linkContent ?
+                  this.state.linkContent.map((item, index) =>
+                    (
+                      <div>
+                        {`${index}. `}
+                        <a href={item.href}>
+                          {item.name}
+                        </a>
+                      </div>
+                    )
+                  )
+                  : null
+              }
+            </Container>
           </Modal.Body>
         </Modal>
 
