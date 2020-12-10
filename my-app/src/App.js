@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import ReadIcon from './assets/readMore.png';
 import LinkIcon from './assets/hyperlink.png';
 import annotations from './assets/annotations';
-import links from './assets/annotations';
+import links from './assets/links';
 
 // import './BootstrapCustom.css';
 
@@ -35,7 +35,7 @@ class App extends React.Component {
     const text = ["hi", "help"]
 
     const handleShow = (item) => this.setState({ show: true, content: annotations[item.target.id] });
-    const handleShowLink = (item) => this.setState({ show: true, content: annotations[item.target.id] });
+    const handleShowLink = (item) => this.setState({ show: true, linkContent: links[item.target.id] });
 
     return (
       <div>
@@ -44,23 +44,24 @@ class App extends React.Component {
           <img id={0} src={ReadIcon} alt="read more icon" />
         </Button>
         {/* //link */}
-        { 
+        {
           links[0].length > 0 ?
-          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-            <img id={0} src={LinkIcon} alt="read more icon" />
-          </Button> : null
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={0} src={LinkIcon} alt="read more icon" />
+            </Button> : null
         }
 
-
-
-
-
-
-
-
-
-
-
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
+          <img id={1} src={ReadIcon} alt="read more icon" />
+        </Button>
+        {/* //link */}
+        {
+          links[1].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
+              <img id={1} src={LinkIcon} alt="read more icon" />
+            </Button> : null
+        }
 
 
         <Modal show={this.state.show} onHide={handleClose} >
@@ -79,10 +80,21 @@ class App extends React.Component {
         <Modal show={this.state.show} onHide={handleClose} >
           <Modal.Header closeButton />
           <Modal.Body >
-            {/* {
-              this.state.linkContent ? 
+            {
+              this.state.linkContent ?
+                this.state.linkContent.map((item, index) =>
+                  (
+                    <div>
+                      {`${index}. `}
+                      <a href={item.href}>
+                        {item.name}
+                      </a>
+                    </div>
+                  )
+                )
+                : null
+            }
 
-            } */}
           </Modal.Body>
         </Modal>
 
