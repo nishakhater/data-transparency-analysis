@@ -1,0 +1,42 @@
+/* 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables"; */
+
+
+@import "../node_modules/bootstrap";
+
+.btn-sm {
+  padding: 0.2em 0.6em;
+  font-size: 0.7em;
+  /* background-color: $white; */
+  border: 5px solid red;
+  
+}
+
+.modal-dialog {
+  max-width: 45vw;
+}
+
+.modal-content {
+  border-radius: 2rem;
+}
+
+.modal-header {
+  /* color: $intus-blue; */
+  border: none;
+  padding: 2rem;
+}
+
+.modal-title {
+  text-align: center;
+  width: 100%;
+}
+
+.modal-body {
+  margin: 0em 0.8em;
+/* 
+  button {
+    margin: 1.2em 0em;
+    height: 2.7rem;
+  } */
+}

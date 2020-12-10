@@ -22,38 +22,40 @@ class Charges extends Component {
       type: "bar",
       data: {
         // x axis
-        labels: ["Charged with a crime", "No known charges", "pending"],
+        labels: ["Charged with a crime", "No known charges"],
         // the different bars
         datasets: [
           {
             label: "Cases with bodycams or other video",
             // % of cases w bodycams
-            data: [30, 33, 27],
+            // data: [36, 586], total:622 
+            data: [5.8, 94.2],
             backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(255, 99, 132, 0.2)",
+              "rgba(5, 45, 143, 0.2)",
+              "rgba(5, 45, 143, 0.2)",
+              "rgba(5, 45, 143, 0.2)",
             ]
           },
           {
             label: "Cases with no bodycams",
-            data: [30, 33, 27],
+            // data: [34, 4855], total: 4889
+            data: [.7, 99.3],
             backgroundColor: [
               "rgba(54, 162, 235, 0.2)",
               "rgba(54, 162, 235, 0.2)",
               "rgba(54, 162, 235, 0.2)",
             ]
           },
-          // {
-          //   label: "Cases with other video form",
-          //   data: [10, 29, 5],
-          //   backgroundColor: [
-          //     "rgba(54, 162, 235, 0.2)",
-          //     "rgba(54, 162, 235, 0.2)",
-          //     "rgba(54, 162, 235, 0.2)",
-
-          //   ]
-          // },
+          {
+            label: "Cases with unspecified video",
+            // data: [76, 2920], total: 2996
+            data: [2.5, 97.5],
+            backgroundColor: [
+              "rgba(170, 170, 170, 0.2)",
+              "rgba(170, 170, 170, 0.2)",
+              "rgba(170, 170, 170, 0.2)"
+            ]
+          }
         ]
       }
     });
@@ -61,7 +63,7 @@ class Charges extends Component {
 
   render() {
     return (
-      <div class="chart-container" style={{position: 'relative', width: '35vw'}}>
+      <div class="chart-container" style={{position: 'relative', width: '80vw'}}>
         <canvas
           ref={node => (this.node = node)}
         />
