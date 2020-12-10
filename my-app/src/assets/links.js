@@ -38,7 +38,43 @@ const links = [
   [
     {name: 'On correlation vs causation (Khan academy)', href: 'https://www.khanacademy.org/test-prep/praxis-math/praxis-math-lessons/gtp--praxis-math--lessons--statistics-and-probability/a/gtp--praxis-math--article--correlation-and-causation--lesson'}
   ],
-
+  [
+    {name: 'Police shooting study retracted, referenced in annotated blurb (read more icon)', href: 'https://www.washingtonpost.com/outlook/2020/07/15/police-shooting-study-retracted/'}
+  ],
+  [],
+  [
+    {name: 'Body worn cameras and the Courts, referenced in annotated blurb', href: 'https://bwctta.com/sites/default/files/Files/Resources/BWCProsecutors.pdf'}
+  ],
+  [
+    {name: 'Bodycams: We can`t let them erode privacy rights', href: 'https://bwctta.com/sites/default/files/Files/Resources/BWCProsecutors.pdf'}
+  ],
+  [
+    {name: 'What Bodycams Do: History/origins', href: 'Body cameras were initially implemented to help police resolve citizen complaints more efficiently. As mentioned earlier, more than in 90% of cases in which body camera footage is used, it is used against private citizens.'}
+  ],
+  [
+    {name: 'NYPD sued for using facial recognition to match to mugshot database', href: 'https://www.nbcnews.com/card/georgetown-center-sues-nypd-facial-recognition-documents-n753961'}
+  ],
+  [
+    {name: 'Crime center software, company referenced in annotation', href: 'https://crimecenter.com/about/'}
+  ],
+  [
+    {name: 'Evaluating the Effects of Body-Worn Cameras', href: 'https://bwc.thelab.dc.gov/TheLabDC_MPD_BWC_Working_Paper_10.20.17.pdf'}
+  ],
+  [
+    {name: 'Body worn cameras and the Courts, referenced in annotated blurb', href: 'https://bwctta.com/sites/default/files/Files/Resources/BWCProsecutors.pdf'}
+  ],
+  [
+    {name: 'Why filming police violence has done nothing to stop it', href: 'https://www.technologyreview.com/2020/06/03/1002587/sousveillance-george-floyd-police-body-cams/?utm_medium=tr_social&utm_campaign=site_visitor.unpaid.engagement&utm_source=Twitter#Echobox=1591368327'}
+  ],
+  [
+    {name: 'Debunking common myths about bodycameras', href: 'https://www.10-8video.com/Blog/debunking-3-common-myths-police-body-cameras'}
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
 ];
 
 export default links;
