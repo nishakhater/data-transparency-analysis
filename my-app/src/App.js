@@ -51,13 +51,13 @@ class App extends React.Component {
         {/* FRAME 1 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={0} src={ReadIcon} alt="read more icon" />
+          <img id={0} src={ReadIcon} alt="read more icon" className="btn-img" />
         </Button>
         {/* //link */}
         {
           links[0].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={0} src={LinkIcon} alt="read more icon" />
+              <img id={0} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameOne}/>
@@ -66,13 +66,13 @@ class App extends React.Component {
         {/* FRAME 2 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={1} src={ReadIcon} alt="read more icon" />
+          <img id={1} src={ReadIcon} alt="read more icon" className="btn-img" />
         </Button>
         {/* //link */}
         {
           links[1].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={1} src={LinkIcon} alt="read more icon" />
+              <img id={1} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameTwo}/>
@@ -81,13 +81,13 @@ class App extends React.Component {
       {/* FRAME 3 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={2} src={ReadIcon} alt="read more icon" />
+          <img id={2} src={ReadIcon} alt="read more icon" className="btn-img" />
         </Button>
         {/* //link */}
         {
           links[1].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={2} src={LinkIcon} alt="read more icon" />
+              <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameThree}/>
@@ -97,13 +97,13 @@ class App extends React.Component {
         {/* FRAME 4 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={2} src={ReadIcon} alt="read more icon" />
+          <img id={2} src={ReadIcon} alt="read more icon" className="btn-img" />
         </Button>
         {/* //link */}
         {
           links[1].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={2} src={LinkIcon} alt="read more icon" />
+              <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameFour}/>
@@ -111,13 +111,13 @@ class App extends React.Component {
         {/* FRAME 5 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={2} src={ReadIcon} alt="read more icon" />
+          <img id={2} src={ReadIcon} alt="read more icon" className="btn-img"  />
         </Button>
         {/* //link */}
         {
           links[1].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={2} src={LinkIcon} alt="read more icon" />
+              <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameFive}/>
@@ -126,13 +126,13 @@ class App extends React.Component {
         {/* FRAME 6 */}
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0}>
-          <img id={2} src={ReadIcon} alt="read more icon" />
+          <img id={2} src={ReadIcon} alt="read more icon" className="btn-img"  />
         </Button>
         {/* //link */}
         {
           links[1].length > 0 ?
             <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={0}>
-              <img id={2} src={LinkIcon} alt="read more icon" />
+              <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
             </Button> : null
         }
         <img class="w-100 p-3" src={FrameSix}/>

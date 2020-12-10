@@ -8,5 +8,8 @@
   font-size: 0.7em;
   /* background-color: $white; */
   border: 5px solid red;
-  
+}
+
+.btn-img {
+  width: 25px;
 }
