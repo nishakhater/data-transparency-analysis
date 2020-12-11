@@ -14,8 +14,9 @@ import FrameOne from './assets/frames/Frame1.png'
 import FrameTwo from './assets/frames/Frame2.png';
 import FrameThree from './assets/frames/Frame3.png';
 import FrameFour from './assets/frames/Frame4.png';
-import FrameFive from './assets/frames/Frame5.png'
-import FrameSix from './assets/frames/Frame6.png'
+import FrameFive from './assets/frames/Frame5.png';
+import FrameSix from './assets/frames/Frame6.png';
+import FrameSeven from './assets/frames/Frame 7.png';
 import annotations from './assets/annotations';
 import links from './assets/links';
 
@@ -55,7 +56,8 @@ class App extends React.Component {
         <img class="fixed-height p-3" src={FrameThree} />
         <img class="fixed-height p-3" src={FrameFour} />
         <img class="fixed-height p-3" src={FrameFive} />
-        <img class="fixed-height p-3" src={FrameSix} />
+        <img class="fixed-height px-3 pt-3" src={FrameSix} />
+        <img class="w-100" src={FrameSeven} />
 
         <div id="f1-l1">
           {/* //read more */}
