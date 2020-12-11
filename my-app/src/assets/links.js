@@ -69,12 +69,19 @@ const links = [
   [
     {name: 'Debunking common myths about bodycameras', href: 'https://www.10-8video.com/Blog/debunking-3-common-myths-police-body-cameras'}
   ],
+  //
   [],
   [],
   [],
   [],
   [],
-  []
+  [    
+    {name: 'Why filming police violence has done nothing to stop it', href: 'https://www.technologyreview.com/2020/06/03/1002587/sousveillance-george-floyd-police-body-cams/?utm_medium=tr_social&utm_campaign=site_visitor.unpaid.engagement&utm_source=Twitter#Echobox=1591368327'}
+  ],
+  [
+    {name: 'Citizens police data project: tracking complaints against officers', href: 'https://invisible.institute/police-data'}
+
+  ]
 ];
 
 export default links;
