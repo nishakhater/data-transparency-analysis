@@ -86,7 +86,37 @@ class App extends React.Component {
         }
         </div>
 
+
         <div id="f1-l3"> 
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={4}>
+          <img id={4} src={ReadIcon} alt="read more icon" className="btn-img"  />
+        </Button>
+        {/* //link */}
+        {
+          links[4].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={4}>
+              <img id={4} src={LinkIcon} alt="read more icon" className="btn-img" />
+            </Button> : null
+        }
+        </div>
+
+        <div id="f1-l4"> 
+        {/* //read more */}
+        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={5}>
+          <img id={5} src={ReadIcon} alt="read more icon" className="btn-img"  />
+        </Button>
+        {/* //link */}
+        {
+          links[5].length > 0 ?
+            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={5}>
+              <img id={5} src={LinkIcon} alt="read more icon" className="btn-img" />
+            </Button> : null
+        }
+        </div> 
+
+
+        <div id="f1-r1"> 
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={2}>
           <img id={2} src={ReadIcon} alt="read more icon" className="btn-img" />
@@ -101,8 +131,7 @@ class App extends React.Component {
         </div>
 
 
-
-        <div id="f1-l4"> 
+        <div id="f1-r2"> 
         {/* //read more */}
         <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={3}>
           <img id={3} src={ReadIcon} alt="read more icon" className="btn-img" />
@@ -115,36 +144,6 @@ class App extends React.Component {
             </Button> : null
         }
         </div>
-
-        <div id="f1-r1"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={4}>
-          <img id={4} src={ReadIcon} alt="read more icon" className="btn-img"  />
-        </Button>
-        {/* //link */}
-        {
-          links[4].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={4}>
-              <img id={4} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
-        </div>
-
-
-
-        <div id="f1-r2"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={5}>
-          <img id={5} src={ReadIcon} alt="read more icon" className="btn-img"  />
-        </Button>
-        {/* //link */}
-        {
-          links[5].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={5}>
-              <img id={5} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
-        </div> 
 
 
 
