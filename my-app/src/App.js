@@ -160,6 +160,34 @@ class App extends React.Component {
         </div>
 
         {/* V's section of links ----------------------------------------------------------*/}
+        <div id="f6-r1" className="bg-blue">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow}>
+            <img id={31} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[31].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink}>
+                <img id={31} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
+        </div>
+
+        <div id="f6-r2" className="bg-blue">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow}>
+            <img id={32} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[32].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink}>
+                <img id={32} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
+        </div>
+
         <div id="f6-l1" className="bg-blue">
           {/* //read more */}
           <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow}>
