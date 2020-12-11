@@ -50,20 +50,86 @@
   left: 1050px; 
 }
 
-#f6-r1{ 
+#f4-l1{ 
   position: absolute; 
-  top: 270px; 
-  left: 1050px; 
+  top: 2710px; 
+  left: 230px; 
 }
 
-#f6-r2{ 
+#f4-l2{ 
   position: absolute; 
-  top: 270px; 
-  left: 1050px; 
+  top: 2890px; 
+  left: 240px; 
+}
+
+#f4-l3{ 
+  position: absolute; 
+  top: 3210px; 
+  left: 70px; 
+}
+
+#f4-r1{ 
+  position: absolute; 
+  top: 2660px; 
+  right: 280px; 
+}
+
+#f4-r2{ 
+  position: absolute; 
+  top: 2980px; 
+  right: 60px; 
+}
+
+#f4-r3{ 
+  position: absolute; 
+  top: 3110px; 
+  right: 300px; 
+}
+
+#f4-r4{ 
+  position: absolute; 
+  top: 3320px; 
+  right: 80px; 
+}
+
+#f5-l1{ 
+  position: absolute; 
+  top: 3680px; 
+  left: 230px; 
+}
+
+#f5-l2{ 
+  position: absolute; 
+  top: 4070px; 
+  left: 230px; 
+}
+
+#f5-r1{ 
+  position: absolute; 
+  top: 3620px; 
+  right: 230px; 
+}
+
+#f5-r2{ 
+  position: absolute; 
+  top: 3940px; 
+  right: 130px; 
+}
+
+#f5-r3{ 
+  position: absolute; 
+  top: 4080px; 
+  right: 130px; 
 }
 
 #f6-l1{ 
   position: absolute; 
-  top: 4520px; 
-  right: 200px; 
+  top: 4450px; 
+  left: 200px; 
+}
+
+#f6-l2{ 
+  position: absolute; 
+  top: 4600px; 
+  left: 305px; 
 }
