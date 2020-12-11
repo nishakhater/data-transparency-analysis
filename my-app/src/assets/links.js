@@ -18,7 +18,7 @@ const links = [
   [
     {name: 'Mathwashing: how algorithms can hide bias', href: 'https://thenewstack.io/hidden-gender-racial-biases-algorithms-can-big-deal/'},
     {name: 'Weapons of Math-destruction', href: 'https://www.researchgate.net/publication/334086134_Weapons_of_Math_Destruction_How_Big_Data_Increases_Inequality_and_Threatens_Democracy'},
-  ]
+  ],
   //section 2
   [
     {name: 'Database: killed by police', href: 'killedbypolice.net'}
@@ -32,6 +32,7 @@ const links = [
     {name: 'Participatory defense programs: nationwide org transforming the landscape of power', href: 'https://www.participatorydefense.org/'},
     {name: 'About transformative justice', href: 'https://transformharm.org/how-transformative-justice-responds-to-violence-without-the-carceral-system/'}
   ],
+  [],
   [
     {name: 'Challenges to data visualization', href: 'https://medium.com/nightingale/the-7-biggest-issues-data-visualization-faces-today-7bf6b6457b72'}
   ],
@@ -49,7 +50,7 @@ const links = [
     {name: 'Bodycams: We can`t let them erode privacy rights', href: 'https://bwctta.com/sites/default/files/Files/Resources/BWCProsecutors.pdf'}
   ],
   [
-    {name: 'What Bodycams Do: History/origins', href: 'Body cameras were initially implemented to help police resolve citizen complaints more efficiently. As mentioned earlier, more than in 90% of cases in which body camera footage is used, it is used against private citizens.'}
+    {name: 'What Bodycams Do: History/origins', href: 'https://www.govtech.com/biz/What-Body-Cams-Do-Resolving-Complaints-Against-Officers.html'}
   ],
   [
     {name: 'NYPD sued for using facial recognition to match to mugshot database', href: 'https://www.nbcnews.com/card/georgetown-center-sues-nypd-facial-recognition-documents-n753961'}
@@ -75,13 +76,15 @@ const links = [
   [],
   [],
   [],
+  [],
+  [],
+  []
   [    
     {name: 'Why filming police violence has done nothing to stop it', href: 'https://www.technologyreview.com/2020/06/03/1002587/sousveillance-george-floyd-police-body-cams/?utm_medium=tr_social&utm_campaign=site_visitor.unpaid.engagement&utm_source=Twitter#Echobox=1591368327'}
   ],
   [
     {name: 'Citizens police data project: tracking complaints against officers', href: 'https://invisible.institute/police-data'}
-
-  ]
+  ],
 ];
 
 export default links;

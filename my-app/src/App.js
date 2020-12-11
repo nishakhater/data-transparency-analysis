@@ -11,9 +11,9 @@ import React, { useState } from "react";
 import ReadIcon from './assets/readMore.png';
 import LinkIcon from './assets/hyperlink.png';
 import FrameOne from './assets/frames/Frame1.png'
-import FrameTwo from './assets/frames/Frame2.png'; 
-import FrameThree from './assets/frames/Frame3.png'; 
-import FrameFour from './assets/frames/Frame4.png'; 
+import FrameTwo from './assets/frames/Frame2.png';
+import FrameThree from './assets/frames/Frame3.png';
+import FrameFour from './assets/frames/Frame4.png';
 import FrameFive from './assets/frames/Frame5.png'
 import FrameSix from './assets/frames/Frame6.png'
 import annotations from './assets/annotations';
@@ -39,27 +39,25 @@ class App extends React.Component {
     };
   }
   render() {
-    const handleClose = () => this.setState({ show: false, content: "", linkContent: undefined });
-    const handleCloseLink = () => this.setState({ showLink: false, content: "", linkContent: undefined });
+    const handleClose = () => this.setState({ show: false, content: "", });
+    const handleCloseLink = () => this.setState({ showLink: false, linkContent: undefined });
     const handleShow = (item) => this.setState({ show: true, content: annotations[item.target.id] });
-    const handleShowLink = (item) => this.setState({ show: true, linkContent: links[item.target.id] });
+    const handleShowLink = (item) => this.setState({ showLink: true, linkContent: links[item.target.id] });
 
     return (
       <div>
         <div>
-          Intro 
+          Intro
         </div>
 
-        <img class="w-100 p-3" src={FrameOne}/>
-        <img class="w-100 p-3" src={FrameTwo}/>
-        <img class="w-100 p-3" src={FrameThree}/>
-        <img class="w-100 p-3" src={FrameFour}/>
-        <img class="w-100 p-3" src={FrameFive}/>
-        <img class="w-100 p-3" src={FrameSix}/>
+        <img class="w-100 p-3" src={FrameOne} />
+        <img class="w-100 p-3" src={FrameTwo} />
+        <img class="w-100 p-3" src={FrameThree} />
+        <img class="w-100 p-3" src={FrameFour} />
+        <img class="w-100 p-3" src={FrameFive} />
+        <img class="w-100 p-3" src={FrameSix} />
 
-
-
-        <div id="f1-l1"> 
+        <div id="f1-l1">
           {/* //read more */}
           <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={0} >
             <img id={0} src={ReadIcon} alt="read more icon" className="btn-img" />
@@ -73,84 +71,115 @@ class App extends React.Component {
           }
         </div>
 
-        <div id="f1-l2"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={1}>
-          <img id={1} src={ReadIcon} alt="read more icon" className="btn-img" />
-        </Button>
-        {/* //link */}
-        {
-          links[1].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={1}>
-              <img id={1} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
+        <div id="f1-l2">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={1}>
+            <img id={1} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[1].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={1}>
+                <img id={1} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
         </div>
 
 
-        <div id="f1-l3"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={4}>
-          <img id={4} src={ReadIcon} alt="read more icon" className="btn-img"  />
-        </Button>
-        {/* //link */}
-        {
-          links[4].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={4}>
-              <img id={4} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
+        <div id="f1-l3">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={4}>
+            <img id={4} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[4].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={4}>
+                <img id={4} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
         </div>
 
-        <div id="f1-l4"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={5}>
-          <img id={5} src={ReadIcon} alt="read more icon" className="btn-img"  />
-        </Button>
-        {/* //link */}
-        {
-          links[5].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={5}>
-              <img id={5} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
-        </div> 
-
-
-        <div id="f1-r1"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={2}>
-          <img id={2} src={ReadIcon} alt="read more icon" className="btn-img" />
-        </Button>
-        {/* //link */}
-        {
-          links[2].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={2}>
-              <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
+        <div id="f1-l4">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={5}>
+            <img id={5} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[5].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={5}>
+                <img id={5} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
         </div>
 
 
-        <div id="f1-r2"> 
-        {/* //read more */}
-        <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={3}>
-          <img id={3} src={ReadIcon} alt="read more icon" className="btn-img" />
-        </Button>
-        {/* //link */}
-        {
-          links[3].length > 0 ?
-            <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={3}>
-              <img id={3} src={LinkIcon} alt="read more icon" className="btn-img" />
-            </Button> : null
-        }
+        <div id="f1-r1">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={2}>
+            <img id={2} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[2].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={2}>
+                <img id={2} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
+        </div>
+
+
+        <div id="f1-r2">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={3}>
+            <img id={3} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[3].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={3}>
+                <img id={3} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
+        </div>
+
+
+        <div id="f1-r2">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow} id={3}>
+            <img id={3} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[3].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink} id={3}>
+                <img id={3} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
+        </div>
+
+        {/* V's section of links ----------------------------------------------------------*/}
+        <div id="f6-l1" className="bg-blue">
+          {/* //read more */}
+          <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow}>
+            <img id={33} src={ReadIcon} alt="read more icon" className="btn-img" />
+          </Button>
+          {/* //link */}
+          {
+            links[33].length > 0 ?
+              <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShowLink}>
+                <img id={33} src={LinkIcon} alt="read more icon" className="btn-img" />
+              </Button> : null
+          }
         </div>
 
 
 
-        <Modal show={this.state.show} dialogClassName="border-0"  onHide={handleClose} >
+
+        <Modal show={this.state.show} dialogClassName="border-0" onHide={handleClose} >
           <Modal.Header className="border-0" closeButton>
-            </Modal.Header>
+          </Modal.Header>
           <Modal.Body className='p-0 m-0 border-none'>
             <Container className="p-5 h-100 overflow-scroll">
               <p>
@@ -159,25 +188,24 @@ class App extends React.Component {
             </Container>
           </Modal.Body>
         </Modal>
-        
+
         <Modal show={this.state.showLink} onHide={handleCloseLink} >
           <Modal.Header closeButton />
-          <Modal.Body  className='p-0 m-0 border-none'>
+          <Modal.Body className='p-0 m-0 border-none'>
             <Container className="p-5 h-100 overflow-scroll">
-
               {
                 this.state.linkContent ?
                   this.state.linkContent.map((item, index) =>
                     (
                       <div>
-                        {`${index}. `}
+                        {`${index + 1}. `}
                         <a href={item.href}>
                           {item.name}
                         </a>
                       </div>
                     )
                   )
-                  : null
+                  : 'null'
               }
             </Container>
           </Modal.Body>
