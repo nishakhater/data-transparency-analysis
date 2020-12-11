@@ -10,6 +10,10 @@
   border: 5px solid red;
 }
 
+.fixed-height {
+  height: 880px;
+}
+
 .btn-img {
   width: 25px;
 }
@@ -52,84 +56,84 @@
 
 #f4-l1{ 
   position: absolute; 
-  top: 2710px; 
-  left: 230px; 
+  top: 2790px; 
+  left: 220px; 
 }
 
 #f4-l2{ 
   position: absolute; 
-  top: 2890px; 
+  top: 2975px; 
   left: 240px; 
 }
 
 #f4-l3{ 
   position: absolute; 
-  top: 3210px; 
-  left: 70px; 
+  top: 3160px; 
+  left: 220px; 
 }
 
 #f4-r1{ 
   position: absolute; 
-  top: 2660px; 
-  right: 280px; 
+  top: 2740px; 
+  left: 1280px; 
 }
 
 #f4-r2{ 
   position: absolute; 
-  top: 2980px; 
-  right: 60px; 
+  top: 3070px; 
+  left: 1320px; 
 }
 
 #f4-r3{ 
   position: absolute; 
-  top: 3110px; 
-  right: 300px; 
+  top: 3200px; 
+  left: 1090px; 
 }
 
 #f4-r4{ 
   position: absolute; 
-  top: 3320px; 
-  right: 80px; 
+  top: 3420px; 
+  left: 1320px; 
 }
 
 #f5-l1{ 
   position: absolute; 
-  top: 3680px; 
-  left: 230px; 
+  top: 3980px; 
+  left: 250px; 
 }
 
 #f5-l2{ 
   position: absolute; 
-  top: 4070px; 
-  left: 230px; 
+  top: 4250px; 
+  left: 180px; 
 }
 
 #f5-r1{ 
   position: absolute; 
-  top: 3620px; 
-  right: 230px; 
+  top: 3730px; 
+  left: 1230px; 
 }
 
 #f5-r2{ 
   position: absolute; 
-  top: 3940px; 
-  right: 130px; 
+  top: 4050px; 
+  left: 1250px; 
 }
 
 #f5-r3{ 
   position: absolute; 
-  top: 4080px; 
-  right: 130px; 
+  top: 4210px; 
+  left: 1095px; 
 }
 
 #f6-l1{ 
   position: absolute; 
-  top: 4450px; 
-  left: 200px; 
+  top: 4590px; 
+  left: 180px; 
 }
 
 #f6-l2{ 
   position: absolute; 
-  top: 4600px; 
-  left: 305px; 
+  top: 4745px; 
+  left: 290px; 
 }

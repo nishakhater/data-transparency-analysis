@@ -50,12 +50,12 @@ class App extends React.Component {
           Intro
         </div>
 
-        <img class="w-100 p-3" src={FrameOne} />
-        <img class="w-100 p-3" src={FrameTwo} />
-        <img class="w-100 p-3" src={FrameThree} />
-        <img class="w-100 p-3" src={FrameFour} />
-        <img class="w-100 p-3" src={FrameFive} />
-        <img class="w-100 p-3" src={FrameSix} />
+        <img class="fixed-height p-3" src={FrameOne} />
+        <img class="fixed-height p-3" src={FrameTwo} />
+        <img class="fixed-height p-3" src={FrameThree} />
+        <img class="fixed-height p-3" src={FrameFour} />
+        <img class="fixed-height p-3" src={FrameFive} />
+        <img class="fixed-height p-3" src={FrameSix} />
 
         <div id="f1-l1">
           {/* //read more */}
@@ -317,10 +317,11 @@ class App extends React.Component {
               </Button> : null
           }
         </div>
+
         <div id="f6-l1">
           {/* //read more */}
           <Button size="sm" className="p-0 m-0" variant="link" onClick={handleShow}>
-            <img id={31} src={ReadIcon} alt="read more icon" className="btn-img" />
+            <img id={32} src={ReadIcon} alt="read more icon" className="btn-img" />
           </Button>
           {/* //link */}
           {
