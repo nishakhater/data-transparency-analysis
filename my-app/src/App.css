@@ -3,6 +3,35 @@
   font-family: 'Poppins', Arial, sans-serif;
 }
 
+.background{ 
+  background-color: #e2eef8;
+}
+
+#intro{ 
+  height: 600px; 
+}
+
+#intro-img{ 
+  height: 600px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; 
+}
+
+#credits{ 
+  height: 100px; 
+  width: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px; 
+  padding-bottom: 30px; 
+  text-align: center;
+
+}
+
 .btn-sm {
   padding: 0.2em 0.6em;
   font-size: 0.7em;
@@ -20,120 +49,207 @@
 
 #f1-l1{ 
   position: absolute;
-  top: 125px; 
+  top: 700px; 
   left: 90px; 
 }
 
 #f1-l2{ 
   position: absolute; 
-  top: 220px; 
+  top: 790px; 
   left: 130px; 
 }
 
 #f1-l3{ 
   position:absolute; 
-  top: 320px; 
+  top: 900px; 
   left: 40px; 
 }
 
 #f1-l4{ 
   position: absolute; 
-  top: 530px; 
+  top: 1110px; 
   left: 210px; 
 }
 
 #f1-r1{ 
   position: absolute; 
-  top: 100px; 
+  top: 670px; 
   left: 1040px; 
 }
 
 #f1-r2{ 
   position: absolute; 
-  top: 270px; 
+  top: 850px; 
   left: 1050px; 
 }
 
+#f1-r3{ 
+  position: absolute; 
+  top: 1025px; 
+  left: 1040px; 
+}
+
+#f1-r4{ 
+  position: absolute; 
+  top: 1100px; 
+  left: 970px; 
+}
+
+#f1-r5{ 
+  position: absolute; 
+  top: 1220px; 
+  left: 1100px; 
+}
+
+#f2-l1{ 
+  position: absolute; 
+  top: 1800px; 
+  left: 110px; 
+}
+
+#f2-l2{ 
+  position: absolute; 
+  top: 2045px; 
+  left: 48px; 
+}
+
+#f2-r1{ 
+  position: absolute; 
+  top: 1740px; 
+  left: 1040px; 
+}
+
+
+#f2-r2{ 
+  position: absolute; 
+  top: 2090px; 
+  left: 1210px; 
+}
+
+#f3-l1{ 
+  position: absolute; 
+  top: 2570px; 
+  left: 70px; 
+}
+
+#f3-l2{ 
+  position: absolute; 
+  top: 2800px; 
+  left: 100px; 
+}
+
+#f3-l3{ 
+  position: absolute; 
+  top: 2980px; 
+  left: 255px; 
+}
+
+
+#f3-r1{ 
+  position: absolute; 
+  top: 2570px; 
+  left: 1250px; 
+}
+
+#f3-r2{ 
+  position: absolute; 
+  top: 2660px; 
+  left: 1300px; 
+}
+
+#f3-r3{ 
+  position: absolute; 
+  top: 2860px; 
+  left: 1060px; 
+}
+
+#f3-r4{ 
+  position: absolute; 
+  top: 3070px; 
+  left: 1120px; 
+}
+
+
 #f4-l1{ 
   position: absolute; 
-  top: 2790px; 
+  top: 3440px; 
   left: 220px; 
 }
 
 #f4-l2{ 
   position: absolute; 
-  top: 2975px; 
+  top: 3550px; 
   left: 240px; 
 }
 
 #f4-l3{ 
   position: absolute; 
-  top: 3160px; 
+  top: 3740px; 
   left: 220px; 
 }
 
 #f4-r1{ 
   position: absolute; 
-  top: 2740px; 
+  top: 3320px; 
   left: 1280px; 
 }
 
 #f4-r2{ 
   position: absolute; 
-  top: 3070px; 
+  top: 3650px; 
   left: 1320px; 
 }
 
 #f4-r3{ 
   position: absolute; 
-  top: 3200px; 
+  top: 3780px; 
   left: 1090px; 
 }
 
 #f4-r4{ 
   position: absolute; 
-  top: 3420px; 
+  top: 4000px; 
   left: 1320px; 
 }
 
 #f5-l1{ 
   position: absolute; 
-  top: 3880px; 
+  top: 4450px; 
   left: 250px; 
 }
 
 #f5-l2{ 
   position: absolute; 
-  top: 4250px; 
+  top: 4830px; 
   left: 180px; 
 }
 
 #f5-r1{ 
   position: absolute; 
-  top: 3730px; 
+  top: 4310px; 
   left: 1230px; 
 }
 
 #f5-r2{ 
   position: absolute; 
-  top: 4050px; 
+  top: 4630px; 
   left: 1250px; 
 }
 
 #f5-r3{ 
   position: absolute; 
-  top: 4210px; 
+  top: 4790px; 
   left: 1095px; 
 }
 
 #f6-l1{ 
   position: absolute; 
-  top: 4590px; 
+  top: 5170px; 
   left: 180px; 
 }
 
 #f6-l2{ 
   position: absolute; 
-  top: 4745px; 
+  top: 5325px; 
   left: 290px; 
 }
