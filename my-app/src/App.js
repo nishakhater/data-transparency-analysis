@@ -33,13 +33,14 @@ class App extends React.Component {
     this.state = {
       content: "",
       linkContent: undefined,
-      show: false
+      show: false,
+      showLink: false
+
     };
   }
   render() {
     const handleClose = () => this.setState({ show: false, content: "", linkContent: undefined });
-    const text = ["hi", "help"]
-
+    const handleCloseLink = () => this.setState({ showLink: false, content: "", linkContent: undefined });
     const handleShow = (item) => this.setState({ show: true, content: annotations[item.target.id] });
     const handleShowLink = (item) => this.setState({ show: true, linkContent: links[item.target.id] });
 
@@ -148,10 +149,9 @@ class App extends React.Component {
 
 
         <Modal show={this.state.show} dialogClassName="border-0"  onHide={handleClose} >
-
           <Modal.Header className="border-0" closeButton>
             </Modal.Header>
-          <Modal.Body className='p-0'>
+          <Modal.Body className='p-0 m-0 border-none'>
             <Container className="p-5 h-100 overflow-scroll">
               <p>
                 {this.state.content}
@@ -159,10 +159,11 @@ class App extends React.Component {
             </Container>
           </Modal.Body>
         </Modal>
-        <Modal show={this.state.show} onHide={handleClose} >
+        
+        <Modal show={this.state.showLink} onHide={handleCloseLink} >
           <Modal.Header closeButton />
-          <Modal.Body >
-            <Container>
+          <Modal.Body  className='p-0 m-0 border-none'>
+            <Container className="p-5 h-100 overflow-scroll">
 
               {
                 this.state.linkContent ?
