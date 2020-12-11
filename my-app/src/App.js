@@ -353,7 +353,7 @@ class App extends React.Component {
           <Modal.Header className="border-0" closeButton>
           </Modal.Header>
           <Modal.Body className='p-0 m-0 border-none'>
-            <Container className="p-5 h-100 overflow-scroll">
+            <Container className="px-5 pb-4 h-100 overflow-scroll">
               <p>
                 {this.state.content}
               </p>
@@ -362,9 +362,9 @@ class App extends React.Component {
         </Modal>
 
         <Modal show={this.state.showLink} onHide={handleCloseLink} >
-          <Modal.Header closeButton />
+          <Modal.Header className="border-0" closeButton />
           <Modal.Body className='p-0 m-0 border-none'>
-            <Container className="p-5 h-100 overflow-scroll">
+            <Container className="pb-5 px-5 h-100 overflow-scroll">
               {
                 this.state.linkContent ?
                   this.state.linkContent.map((item, index) =>
